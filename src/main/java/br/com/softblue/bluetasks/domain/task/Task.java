@@ -37,7 +37,6 @@ public class Task {
 	
 	@ManyToOne
 	@JoinColumn(name = "app_user_id")
-	@NotNull(message = "O usuário deve ser informado")
 	@JsonIgnore
 	private AppUser appUser;
 	
